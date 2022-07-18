@@ -233,21 +233,24 @@ h1
 
 .WorkExpText{
   position: absolute;
-  top: 2350px;
+  top: 2550px;
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center; /** Y-axis align **/
   justify-content: center; /** X-axis align **/
   font-family: Arial, Helvetica, sans-serif;
+  font-stretch: condensed;
+  font-weight: bolder;
   z-index: 1;
+  font-size: 1.4em;
   color:white;
 }
 
 @media screen and (max-width: 415px) {
   .WorkExpText{
-
-    top: 2200px;
+    font-size: .4em;
+    top: 2250px;
   }
 }
 
@@ -322,6 +325,22 @@ h1
   }
 }
 
+.BudgetText{
+  position: absolute;
+  top: 3760px;
+  left: 800px;
+  z-index: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 415px) {
+  .BudgetText{
+    top: 4200px;
+    left: 5px;
+    max-width: 50%;
+    height: auto;
+  }
+}
 
 .HangmanSource{
   position: absolute;
@@ -335,6 +354,23 @@ h1
 @media screen and (max-width: 415px) {
   .HangmanSource{
     left: 5px;
+  }
+}
+
+.BudgetSource{
+  position: absolute;
+  top: 3900px;
+  left: 800px;
+  z-index: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #00befc;
+}
+@media screen and (max-width: 415px) {
+  .BudgetSource{
+    top: 4400px;
+    left: 5px;
+    max-width: 50%;
+    height: auto;
   }
 }
 
@@ -360,6 +396,23 @@ h1
   }
 }
 
+.BudgetPic{
+  position: absolute;
+  top: 3560px;
+  left: 805px;
+  max-height: 30%;
+  width: auto;
+  z-index: 0;
+}
+
+@media screen and (max-width: 415px) {
+  .BudgetPic{
+    top: 4000px;
+    left: 5px;
+    max-width: 50%;
+    height: auto;
+  }
+}
 
 p{
   color:black;
@@ -492,6 +545,11 @@ body {
 
 }
 
+@media screen and (max-width: 415px) {
+  .BottomBox{
+    top: 4600px;
+  }
+}
 
 
 .BottomTextL{
@@ -520,21 +578,24 @@ body {
 
 @media screen and (max-width: 415px) {
   .BottomTextL{
-    left: 11px;
+    top: 4600px;
+    left: 30px;
     font-size: 1em;
   }
 }
 
 @media screen and (max-width: 415px) {
   .BottomTextG{
-    left: 120px;
+    top: 4600px;
+    left: 139px;
     font-size: 1em;
   }
 }
 
 @media screen and (max-width: 415px) {
   .BottomTextE{
-    left: 210px;
+    top: 4600px;
+    left: 229px;
     font-size: 1em;
 
   }
