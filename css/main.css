@@ -30,10 +30,12 @@ html {
   z-index: 3;
   top: 1%;
   left: 20%;
+  font-size: 2.7vh;
 }
 
 @media screen and (max-width: 415px) {
   .inlineHeader{
+    width: 1%;
     display:none;
 
   }
@@ -44,11 +46,14 @@ html {
   top: -1%;
   left: 6%;
   z-index: 3;
+  font-size: 2.6vh;
   font-family: Impact, fantasy;
 }
 @media screen and (max-width: 415px) {
   .Joshua {
     display: none;
+    width: 1%;
+    left: -100px;
 
   }
 }
@@ -60,12 +65,14 @@ html {
   left: 10%;
   z-index: 3;
   color: #00befc;
+  font-size: 2.6vh;
   font-family: Impact, fantasy;
 }
 
 @media screen and (max-width: 415px) {
   .Jones {
     display: none;
+    width: 1%;
 
   }
 }
@@ -73,24 +80,26 @@ html {
 .HeaderImage{
   position: fixed;
   z-index:2;
+  width: 110%;
+  height: auto;
 
 }
 
 @media screen and (max-width: 415px) {
   .HeaderImage{
     display:none;
-
+    width: 1%;
   }
 }
 
 .JoshuaJonesHeader{
   display: block;
-  top: 150px;
-  left: 100px;
+  top: 20vh;
+  left: 13.2vh;
   position: absolute;
   text-align: left;
   color: black;
-  font-size: 4.5em;
+  font-size: 12.2vh;
   font-family: "Franklin Gothic Medium", serif;
   font-stretch: condensed;
   z-index: 0;
@@ -100,6 +109,7 @@ html {
   .JoshuaJonesHeader{
     font-size: 3em;
     left: 35px;
+    max-width: 80%;
 
 
   }
@@ -107,14 +117,15 @@ html {
 
 .CSdegree {
   display: block;
-  top: 440px;
-  left: 105px;
+  top: 60vh;
+  left: 13.2vh;
   position: absolute;
   text-align: Left;
   color: black;
   font-family: "Franklin Gothic Demi", serif;
   font-stretch: condensed;
   font-style: italic;
+  font-size: 2.7vh;
   z-index: 0;
 }
 @media screen and (max-width: 415px) {
@@ -125,6 +136,40 @@ html {
   }
 }
 
+.HelloWorld{
+  position: absolute;
+  width: 58%;
+  height: auto;
+  top: 30vh;
+  z-index: 0;
+}
+@media screen and (max-width: 415px) {
+  .HelloWorld{
+    max-width: 1%;
+    display: none;
+    left: 1px;
+    top: 1px;
+
+  }
+}
+
+.EndOfHelloWorld{
+  position: absolute;
+  width: 65%;
+  height: auto;
+  top: 37.5vh;
+  left: 28vh;
+  z-index: 0;
+}
+
+@media screen and (max-width: 415px) {
+  .EndOfHelloWorld{
+    max-width: 1%;
+    display: none;
+    left: 1px;
+
+  }
+}
 h1
 {
   display: inline-block;
@@ -133,9 +178,97 @@ h1
 
 }
 
+.HiddenText{
+  position: absolute;
+  top: 100vh;
+  z-index: 0;
+}
+
+.HiddenText p{
+  color: white;
+  z-index: 0;
+}
+
+@media screen and (max-width: 415px) {
+  .HiddenText{
+    max-width: 1%;
+    display: none;
+    left: 1px;
+
+  }
+}
+@media screen and (max-width: 415px) {
+  .HiddenText p{
+    max-width: 1%;
+    display: none;
+    left: 1px;
+
+  }
+}
+
+
+.WhiteAboutBox{
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 110vh;
+  color: darkgray;
+
+}
+
+@media screen and (max-width: 415px) {
+  .WhiteAboutBox{
+    max-width: 100%;
+
+  }
+}
+
+.AboutMeText {
+  display: block;
+  color: #00befc;
+  top: 100vh;
+  left: 5vh;
+  position: absolute;
+  z-index: 1;
+  font-family: "Franklin Gothic Medium", serif;
+  font-size: 11.8vh;
+
+}
+
+@media screen and (max-width: 415px) {
+  .AboutMeText {
+    top: 720px;
+    font-size: 2.3em;
+
+
+
+  }
+}
+
+.AboutMeParagraph{
+  display:block;
+  text-align: left;
+  position: absolute;
+  top: 130vh;
+  left: 5vh;
+  color: White;
+  z-index: 1;
+  font-family: Arial, serif;
+  font-size: 4.2vh;
+}
+
+@media screen and (max-width: 415px) {
+  .AboutMeParagraph {
+    top: 840px;
+    font-size: .9em;
+    max-width: 90%;
+
+  }
+}
 .CodingExpHeader{
   position: absolute;
-  top: 1350px;
+  top: 182vh;
   width: 100%;
   height: 100%;
   display: flex;
@@ -149,40 +282,40 @@ h1
 @media screen and (max-width: 415px) {
   .CodingExpHeader{
     font-size: 1.2em;
+    top: 1400px;
 
   }
 }
 
 .PythonImg {
   position: absolute;
-  top: 1870px;
-  left: 100px;
-  max-width: 23%;
+  top: 250vh;
+  left: 12vh;
+  width: 25%;
   height: auto;
   z-index: 1;
-  transition-duration: .5s;
 }
 
 @media screen and (max-width: 415px) {
   .PythonImg{
-    left: 1px;
+    left: 13px;
+    top:1860px;
 
   }
 }
 
 .HTMLImg{
   position: absolute;
-  top: 1845px;
-  left: 565px;
-  max-width: 27%;
+  top: 249vh;
+  left: 76vh;
+  width: 27%;
   height: auto;
   z-index: 1;
-  transition-duration: .5s;
 }
 
 @media screen and (max-width: 415px) {
   .HTMLImg{
-    left: 120px;
+    left: 135px;
     top:1860px;
 
   }
@@ -191,17 +324,16 @@ h1
 
 .CSSImg{
   position: absolute;
-  top: 1850px;
-  left: 1050px;
-  max-width: 26%;
+  top: 250vh;
+  left: 140vh;
+  width: 26%;
   height: auto;
   z-index: 1;
-  transition-duration: .5s;
 }
 
 @media screen and (max-width: 415px) {
   .CSSImg{
-    left: 250px;
+    left: 262px;
     top: 1862px;
 
   }
@@ -212,7 +344,7 @@ h1
 
 .WorkExpHeader{
   position: absolute;
-  top: 2200px;
+  top: 297vh;
   width: 100%;
   height: 100%;
   display: flex;
@@ -221,19 +353,21 @@ h1
   z-index: 1;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 800;
+  font-size: 8vh;
   color:white;
 }
 
 @media screen and (max-width: 415px) {
   .WorkExpHeader{
+    color: black;
     font-size: 1.2em;
-    top: 2120px;
+    top: 1920px;
   }
 }
 
 .WorkExpText{
   position: absolute;
-  top: 2550px;
+  top: 345vh;
   width: 100%;
   height: 100%;
   display: flex;
@@ -243,23 +377,26 @@ h1
   font-stretch: condensed;
   font-weight: bolder;
   z-index: 1;
-  font-size: 1.4em;
+  font-size: 3.85vh;
   color:white;
 }
 
 @media screen and (max-width: 415px) {
   .WorkExpText{
-    font-size: .4em;
+    font-size: 1em;
+    left: 30px;
     top: 2250px;
+    max-width: 80%;
+    color: black;
   }
 }
 
 .BackgroundCodingIMG{
   position: absolute;
-  top: 2530px;
+  top: 340vh;
   width: 125%;
-  left: -8px;
   height: auto;
+  left: -1vh;
   filter: blur(8px);
   -webkit-filter: blur(6px);
   z-index: 0;
@@ -267,19 +404,20 @@ h1
 
 @media screen and (max-width: 415px) {
   .BackgroundCodingIMG{
-    width: 100%;
-    height: 35%;
-    top: 2460px;
+    opacity: 0;
 
   }
 }
 
 .BackgroundCodingIMG2{
   position: absolute;
-  top: 2530px;
-  width: 130%;
-  -webkit-filter: blur(3px);
-  z-index: -1;
+  top: 340vh;
+  width: 125%;
+  height: auto;
+  left: -1vh;
+  filter: blur(8px);
+  -webkit-filter: blur(6px);
+  z-index: 0;
 }
 
 @media screen and (max-width: 415px) {
@@ -287,12 +425,13 @@ h1
     display: none;
     width: 1%;
 
+
   }
 }
 
 .PersonalProjectsHeader{
   position: absolute;
-  top: 3050px;
+  top: 412vh;
   width: 100%;
   height: 100%;
   display: flex;
@@ -301,11 +440,14 @@ h1
   z-index: 0;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 800;
+  font-size: 7.9vh;
+
 }
 
 @media screen and (max-width: 415px) {
   .PersonalProjectsHeader{
     font-size: 1.2em;
+    top: 2800px;
 
   }
 }
@@ -313,10 +455,12 @@ h1
 
 .HangmanText{
   position: absolute;
-  top: 3760px;
-  left: 349px;
+  top: 508vh;
+  left: 47vh;
   z-index: 0;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.5vh;
+
 }
 
 @media screen and (max-width: 415px) {
@@ -327,15 +471,16 @@ h1
 
 .BudgetText{
   position: absolute;
-  top: 3760px;
-  left: 800px;
+  top: 508vh;
+  left: 124.5vh;
   z-index: 0;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.5vh;
 }
 
 @media screen and (max-width: 415px) {
   .BudgetText{
-    top: 4200px;
+    top: 3900px;
     left: 5px;
     max-width: 50%;
     height: auto;
@@ -344,11 +489,12 @@ h1
 
 .HangmanSource{
   position: absolute;
-  top: 3900px;
-  left: 349px;
+  top: 525vh;
+  left: 47vh;
   z-index: 0;
   font-family: Arial, Helvetica, sans-serif;
   color: #00befc;
+  font-size: 2.6vh;
 }
 
 @media screen and (max-width: 415px) {
@@ -359,15 +505,16 @@ h1
 
 .BudgetSource{
   position: absolute;
-  top: 3900px;
-  left: 800px;
+  top: 525vh;
+  left: 124.5vh;
   z-index: 0;
   font-family: Arial, Helvetica, sans-serif;
   color: #00befc;
+  font-size: 2.6vh;
 }
 @media screen and (max-width: 415px) {
   .BudgetSource{
-    top: 4400px;
+    top: 4010px;
     left: 5px;
     max-width: 50%;
     height: auto;
@@ -381,9 +528,9 @@ h1
 
 .HangmanPic{
   position: absolute;
-  top: 3560px;
-  left: 380px;
-  max-height: 30%;
+  top: 478vh;
+  left: 50vh;
+  height: 30%;
   width: auto;
   z-index: 0;
 }
@@ -398,16 +545,16 @@ h1
 
 .BudgetPic{
   position: absolute;
-  top: 3560px;
-  left: 805px;
-  max-height: 30%;
+  top: 478vh;
+  left: 125vh;
+  height: 30%;
   width: auto;
   z-index: 0;
 }
 
 @media screen and (max-width: 415px) {
   .BudgetPic{
-    top: 4000px;
+    top: 3700px;
     left: 5px;
     max-width: 50%;
     height: auto;
@@ -455,147 +602,75 @@ body {
   overflow-x: hidden; /* Hide scrollbars */
 }
 
-
-.HelloWorld{
-  max-width: 58%;
-  height: auto;
-  z-index: 0;
-}
-.EndOfHelloWorld{
-  max-width: 65%;
-  height: auto;
-  z-index: 0;
-}
-
-.HiddenText{
-  position: absolute;
-  top:750px;
-  z-index: 0;
-}
-
-.HiddenText p{
-  color: white;
-  z-index: 0;
-}
-
-
-.WhiteAboutBox{
-  z-index: -1;
-  width: 1600px;
-  height: 650px;
-  color: darkgray;
-
-}
-
 @media screen and (max-width: 415px) {
-  .WhiteAboutBox{
-    width: 390px;
-
+  html, body {
+    overflow-x: hidden; /* Hide scrollbars */
   }
 }
 
-.AboutMeText {
-  display: block;
-  color: #00befc;
-  top: 765px;
-  left: 10px;
-  position: absolute;
-  z-index: 1;
-  font-family: "Franklin Gothic Medium", serif;
-  font-size: 90px;
 
-}
-
-@media screen and (max-width: 415px) {
-  .AboutMeText {
-    top: 815px;
-    font-size: 2.3em;
-
-
-  }
-}
-
-.AboutMeParagraph{
-  display:block;
-  text-align: left;
-  position: absolute;
-  top: 1000px;
-  left: 10px;
-  color: White;
-  z-index: 1;
-  font-family: Arial, serif;
-  font-size: 28px;
-}
-
-@media screen and (max-width: 415px) {
-  .AboutMeParagraph {
-    top: 900px;
-    font-size: .9em;
-
-  }
-}
 
 .BottomBox{
   position:relative;
-  top: 4000px;
+  top: 540vh;
   z-index: -1;
   width:100%;
-  height: 100px;
+  height: 10vh;
   background: #778899;
 
 }
 
 @media screen and (max-width: 415px) {
   .BottomBox{
-    top: 4600px;
+    top: 4200px;
   }
 }
 
 
 .BottomTextL{
   position:absolute;
-  top: 4020px;
-  left: 495px;
+  top: 541.5vh;
+  left: 65vh;
   z-index: 1;
-  font-size: 25px;
+  font-size: 3.3vh;
 }
 
 .BottomTextG{
   position:absolute;
-  top: 4020px;
-  left: 750px;
+  top: 541.5vh;
+  left: 100vh;
   z-index: 1;
-  font-size: 25px;
+  font-size: 3.3vh;
 }
 
 .BottomTextE{
   position:absolute;
-  top: 4020px;
-  left: 1000px;
+  top: 541.5vh;
+  left: 135vh;
   z-index: 1;
-  font-size: 25px;
+  font-size: 3.3vh;
 }
 
 @media screen and (max-width: 415px) {
   .BottomTextL{
-    top: 4600px;
-    left: 30px;
+    top: 4200px;
+    left: 50px;
     font-size: 1em;
   }
 }
 
 @media screen and (max-width: 415px) {
   .BottomTextG{
-    top: 4600px;
-    left: 139px;
+    top: 4200px;
+    left: 159px;
     font-size: 1em;
   }
 }
 
 @media screen and (max-width: 415px) {
   .BottomTextE{
-    top: 4600px;
-    left: 229px;
+    top: 4200px;
+    left: 249px;
     font-size: 1em;
 
   }
